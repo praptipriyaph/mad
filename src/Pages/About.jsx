@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import Navbar from '../components/Navbar';
 
 const About = () => {
   return (
-    <div>About</div>
-  )
-}
+    <div>
+      <Navbar />
+      <h1>About Us</h1>
+      <p>This is the About page of the Pharmacy Store website.</p>
+    </div>
+  );
+};
 
-export default About
+export default About;
