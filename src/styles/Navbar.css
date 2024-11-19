@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    background-color: #ffffff;
+    background-color: #dee9ff;
   }
   
   .logo {
@@ -32,7 +32,7 @@
   }
   
   .contact-btn {
-    background-color: #3498db;
+    background-color: ##1563ff;
     color: #ffffff;
     padding: 10px 20px;
     border: none;
