@@ -1,20 +1,25 @@
 import React from 'react';
 import '../styles/Navbar.css';
-
+import { Link } from 'react-router-dom';
+import Logo from "../assets/logo.png"
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="navbar-brand">
-        <img src="../assets/logo.png" alt="Pharmacy Logo" className="logo" />
-        <span>PharmaFind</span>
+      <div className="navbar-left">
+        <img src={Logo} alt="PharmaFind Logo" className="navbar-logo" />
+        <span className="navbar-brand">PharmaFind</span>
       </div>
-      <ul className="navbar-links">
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Cart</li>
-        <li>Log in</li>
-      </ul>
+      <div className="navbar-right">
+        <Link to="/" className="navbar-link">Home</Link>
+        
+        <Link to="/login" className="navbar-link">Login</Link>
+        <div className="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </nav>
   );
 };

@@ -1,0 +1,79 @@
+/* Why Us Section Styling */
+.why-us-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .why-us-container {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .why-us-header {
+    margin-bottom: 50px;
+  }
+  
+  .why-us-subtitle {
+    color: #ff4d4f;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .why-us-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1e1e1e;
+    margin-bottom: 0;
+  }
+  
+  .why-us-features {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .feature-card {
+    background-color: #f8f9fc;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    flex: 1;
+    max-width: 33%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icon-container {
+    background-color: #e8f0ff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .feature-icon {
+    font-size: 28px;
+    color: #4b7bec;
+  }
+  
+  .feature-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1e1e1e;
+    margin-bottom: 15px;
+  }
+  
+  .feature-card p {
+    font-size: 14px;
+    color: #7b7b7b;
+    line-height: 1.6;
+  }
+  
