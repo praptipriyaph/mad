@@ -5,8 +5,8 @@ const HeroSection = () => {
   return (
     <div className="hero-section">
       <div className="hero-content">
-        <span className="subtitle">Pharmacy Store</span>
-        <h1 className="main-title">Your trusted Pharmacy</h1>
+      
+        <h1 className="main-title">Your trusted Medicine finding App</h1>
         <p className="customer-count">100k+ Satisfied Customers</p>
         
         <div className="search-container">

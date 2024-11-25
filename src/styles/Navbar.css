@@ -2,60 +2,85 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 1rem 2rem;
   background-color: #ffffff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  font-family: 'Arial', sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.98);
 }
 
 .navbar-left {
   display: flex;
   align-items: center;
+  gap: 0.75rem;
 }
 
 .navbar-logo {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
+  width: 32px;
+  height: 32px;
+  transition: transform 0.2s ease;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05);
 }
 
 .navbar-brand {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.25rem;
+  font-weight: 700;
   color: #0047ff;
+  letter-spacing: -0.02em;
 }
 
 .navbar-right {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 2rem;
 }
 
 .navbar-link {
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.9375rem;
   color: #333;
-  transition: color 0.3s ease;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.navbar-link:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0047ff;
+  transition: width 0.2s ease;
 }
 
 .navbar-link:hover {
   color: #0047ff;
 }
 
-.menu-icon {
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 4px;
+.navbar-link:hover:after {
+  width: 100%;
 }
 
-.menu-icon span {
-  width: 25px;
-  height: 3px;
-  background-color: #333;
-  transition: background-color 0.3s ease;
-}
-
-.menu-icon:hover span {
-  background-color: #0047ff;
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.75rem 1rem;
+  }
+  
+  .navbar-right {
+    gap: 1.25rem;
+  }
+  
+  .navbar-brand {
+    font-size: 1.125rem;
+  }
 }

@@ -6,6 +6,10 @@ import './App.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import HeroSection from './components/HeroSection';
+import SearchResults from './pages/SearchResults';
+
+
 
 const App = () => {
   return (
@@ -13,9 +17,15 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+
+        <Route path="/" element={<HeroSection />} />
+        <Route path="/search" element={<SearchResults />} />
+
       </Routes>
     </Router>
   );
 };
 
 export default App;
+
+
